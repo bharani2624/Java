@@ -14,7 +14,7 @@ public class MaximumSumSubarray {
         int result=Integer.MIN_VALUE;
         for(int i=k;i<n;i++)
         {
-            sum+=nums[i]-nums[nums[i-k]];
+            sum+=nums[i]-nums[i-k];
             result=Math.max(result, sum);
         }
         System.out.print(result);
